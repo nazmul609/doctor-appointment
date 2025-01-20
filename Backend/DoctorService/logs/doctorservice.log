@@ -1,0 +1,31 @@
+2024-04-29T16:10:14.057+06:00  INFO 10472 --- [DoctorService] [main] c.p.D.DoctorServiceApplication           : Starting DoctorServiceApplication using Java 17.0.10 with PID 10472 (C:\Users\DELL\Documents\HMS\DoctorService\target\classes started by DELL in C:\Users\DELL\Documents\HMS\DoctorService)
+2024-04-29T16:10:14.064+06:00  INFO 10472 --- [DoctorService] [main] c.p.D.DoctorServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-04-29T16:10:14.946+06:00  INFO 10472 --- [DoctorService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T16:10:15.025+06:00  INFO 10472 --- [DoctorService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2024-04-29T16:10:15.635+06:00  INFO 10472 --- [DoctorService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-29T16:10:15.666+06:00  INFO 10472 --- [DoctorService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-29T16:10:15.667+06:00  INFO 10472 --- [DoctorService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29T16:10:15.774+06:00  INFO 10472 --- [DoctorService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-29T16:10:15.775+06:00  INFO 10472 --- [DoctorService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1612 ms
+2024-04-29T16:10:15.987+06:00  INFO 10472 --- [DoctorService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T16:10:16.085+06:00  INFO 10472 --- [DoctorService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T16:10:16.144+06:00  INFO 10472 --- [DoctorService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T16:10:16.471+06:00  INFO 10472 --- [DoctorService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T16:10:16.520+06:00  INFO 10472 --- [DoctorService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T16:10:17.006+06:00  INFO 10472 --- [DoctorService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fb48970
+2024-04-29T16:10:17.009+06:00  INFO 10472 --- [DoctorService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T16:10:17.098+06:00  WARN 10472 --- [DoctorService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-29T16:10:17.100+06:00  WARN 10472 --- [DoctorService] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-29T16:10:18.230+06:00  INFO 10472 --- [DoctorService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T16:10:18.315+06:00  INFO 10472 --- [DoctorService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T16:10:18.726+06:00  WARN 10472 --- [DoctorService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29T16:10:19.201+06:00  INFO 10472 --- [DoctorService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-29T16:10:19.218+06:00  INFO 10472 --- [DoctorService] [main] c.p.D.DoctorServiceApplication           : Started DoctorServiceApplication in 5.745 seconds (process running for 9.768)
+2024-04-29T16:10:47.467+06:00  INFO 10472 --- [DoctorService] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29T16:10:47.467+06:00  INFO 10472 --- [DoctorService] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-29T16:10:47.471+06:00  INFO 10472 --- [DoctorService] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-29T16:10:47.531+06:00  INFO 10472 --- [DoctorService] [http-nio-8080-exec-2] c.p.D.Controller.DoctorController        : Fetching all the doctors from doctor database
+2024-04-29T16:11:44.035+06:00  INFO 10472 --- [DoctorService] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-29T16:11:44.057+06:00  INFO 10472 --- [DoctorService] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T16:11:44.064+06:00  INFO 10472 --- [DoctorService] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T16:11:44.075+06:00  INFO 10472 --- [DoctorService] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

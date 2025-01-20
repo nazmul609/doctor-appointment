@@ -1,0 +1,61 @@
+spring:
+ cloud:
+   gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: '*'
+            allowedMethods:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            allowedHeaders: '*'
+            maxAge: 30  
+            
+      routes:
+       - id: PatientService
+         uri: lb://PATIENTSERVICE
+         predicates:
+           - Path=/patient/**
+         filters:
+           - AuthenticationFilter
+
+       - id: DoctorService
+         uri: lb://DOCTORSERVICE
+         predicates:
+           - Path=/doctor/**
+         filters:
+           - AuthenticationFilter
+           
+       - id: AppointmentService
+         uri: lb://APPOINTMENTSERVICE
+         predicates:
+           - Path=/appointment/**
+         filters:
+           - AuthenticationFilter
+           
+       - id: AdminService
+         uri: lb://ADMINSERVICE
+         predicates:
+           - Path=/admin/**
+         filters:
+           - AuthenticationFilter        
+
+       - id: AuthService
+         uri: lb://AUTHSERVICE
+         predicates:
+           - Path=/auth/**
+         
+         
+
+ application:
+   name: APIGATEWAY
+   
+server:
+  port: 8080   
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone : http://localhost:8765/eureka
